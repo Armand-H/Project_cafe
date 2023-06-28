@@ -1,0 +1,377 @@
+/* RESET */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  text-decoration: none;
+}
+/* THEME */
+
+:root {
+  /* --primary:;
+  --secondary:;
+  --primary-dark:; */
+  --dark: #2c3e50;
+  --danger: #e74c3c;
+  --safe: #2ecc71;
+  --orange: #e67e22;
+  --background-light: #ecf0f1;
+  --text-color-dark: #444;
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+/* GENERAL*/
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #222;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+p {
+  margin-bottom: 10px;
+}
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-primary {
+  background-color: white;
+  color: #222;
+}
+.btn-dark {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #222;
+}
+.container {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.my-10 {
+  margin: 10px 0;
+}
+.my-20 {
+  margin: 20px 0;
+}
+.underline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.chip {
+  display: inline-block;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+/* HEADER */
+
+.header {
+  background: #333;
+  overflow: auto;
+  line-height: 1.7em;
+}
+.header nav h1 {
+  float: left;
+  padding: 20px;
+  margin-bottom: 0;
+}
+.header nav h1 a {
+  color: #fff;
+}
+.header nav ul {
+  float: right;
+  list-style: none;
+}
+.header nav ul li {
+  float: left;
+}
+.header nav ul li a {
+  color: #fff;
+  padding: 20px;
+  display: block;
+}
+.header nav ul li a:hover {
+  color: var(--orange);
+  background-color: var(--text-color-dark);
+  transition: 0.4s;
+}
+.active {
+  background-color: var(--text-color-dark);
+}
+
+/* vp */
+
+.vp {
+  height: 700px;
+  background: url(../images/cafe1.jpg) center center;
+  background-size: cover;
+  text-align: center;
+}
+.vp-content {
+  max-width: 850px;
+  padding-top: 50px;
+  color: #fff;
+  display: block;
+  margin: auto;
+}
+.vp-content h1 {
+  font-size: 50px;
+}
+.vp-content p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.9em;
+}
+
+.btn-primary:hover {
+  color: var(--orange);
+  background-color: var(--text-color-dark);
+  transition: 0.2s;
+}
+
+.btn-dark:hover {
+  color: #222;
+  background-color: #fff;
+  transition: 0.2s;
+}
+
+/* FEATURES */
+
+.features {
+  padding: 80px 0px;
+  overflow: auto;
+  text-align: center;
+}
+
+.feature {
+  float: left;
+  width: 50%;
+  padding: 0px 10px;
+}
+
+/* person */
+
+.person {
+  height: 400px;
+  background: url(../images/cafe3.jpg) center center/cover;
+}
+
+/* reservation */
+.reservation {
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* footer */
+
+footer {
+  background: #222;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 0;
+}
+
+/***** PAGE-WHERE *****/
+.where {
+  padding: 180px 0px;
+  overflow: auto;
+  min-height: 84.1vh;
+}
+.where-img {
+  float: left;
+  width: 45%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.where-text {
+  float: right;
+  width: 50%;
+}
+.chip-purple {
+  background-color: #c04191;
+}
+.chip-brown {
+  background-color: #8c5e24;
+}
+
+/***** PAGE-CONTACT*****/
+.contact {
+  padding: 180px 0px 100px 0px;
+  min-height: 100vh;
+}
+.contact-form-container {
+  max-width: 600px;
+  margin: auto;
+}
+.contact-form-container form label {
+  display: block;
+  font-weight: 700;
+}
+.contact-form-container form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.contact-form-container form textarea {
+  min-height: 100px;
+}
+
+/*** CUP ***/
+.body-cup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 110px;
+}
+.container {
+  position: relative;
+}
+.cup {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  background: url(/images/logo_coffee.png) center center/cover;
+}
+.top {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-radius: 50%;
+}
+.circle {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.coffee {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#322626, #6f4e37);
+  border-radius: 50%;
+}
+.handle {
+  position: absolute;
+  right: -30px;
+  top: 15px;
+  width: 82px;
+  height: 120px;
+  border: 23px solid #fff;
+  border-left: 23px solid transparent;
+  border-bottom: 23px solid transparent;
+  border-radius: 50%;
+  transform: rotate(40deg);
+}
+.plate {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 150px;
+  background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+  border-radius: 50%;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.2);
+}
+.plate::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #f9f9f9, #e7e7e7);
+}
+.plate::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  right: 35px;
+  bottom: 35px;
+  background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
+  border-radius: 50%;
+}
+.vapour {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0 25px;
+}
+.vapour span {
+  position: relative;
+  bottom: 50px;
+  display: block;
+  min-height: 120px;
+  min-width: 8px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  animation: animate 5s linear infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
+}

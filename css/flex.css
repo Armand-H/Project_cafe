@@ -1,0 +1,8 @@
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cotennt {
+  flex-grow: 1 !important;
+}
