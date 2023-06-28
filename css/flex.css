@@ -3,6 +3,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.cotennt {
+.content {
   flex-grow: 1 !important;
 }
